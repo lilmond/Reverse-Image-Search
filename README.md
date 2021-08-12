@@ -18,5 +18,4 @@ Bing Result: https://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgu
 - [PimEyes](https://pimeyes.com/en)
 - [PicTriev](http://www.pictriev.com/)
 - [Betaface](https://www.betafaceapi.com/demo.html)
-- [SocialCatFish](https://socialcatfish.com/reverse-image-search/)
 - [Berify](https://berify.com/) (Sign In required)
