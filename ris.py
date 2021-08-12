@@ -15,11 +15,14 @@ def main():
         clearConsole()
         while True:
             image_url = input("Image URL: ")
-            google_url = f"https://www.google.com/searchbyimage?image_url={image_url}"
-            bing_url = f"https://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl={image_url}"
-            yandex_url = f"https://yandex.com/images/search?source=collections&url={image_url}&rpt=imageview"
-            tineye_url = f"https://www.tineye.com/search/?&url={image_url}"
-            print(f"{C_BLUE}Google Result:{C_RESET} {google_url}\r\n{C_BLUE}Bing Result:{C_RESET} {bing_url}\r\n{C_BLUE}Yandex Result:{C_RESET} {yandex_url}\r\n{C_BLUE}Tineye Result:{C_RESET} {tineye_url}\r\n\r\n")
+            results = {}
+            results["Google"] = f"https://www.google.com/searchbyimage?image_url={image_url}"
+            results["Yandex"] = f"https://yandex.com/images/search?source=collections&url={image_url}&rpt=imageview"
+            results["TinEye"] = f"https://www.tineye.com/search/?&url={image_url}"
+            results["Bing"] = f"https://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl={image_url}"
+            for result in results:
+                print(f"{C_BLUE}{result}: {C_RESET}{results[result]}")
+            print(f"\r\n")
     except KeyboardInterrupt:
         sys.exit()
 
