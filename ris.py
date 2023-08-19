@@ -46,7 +46,7 @@ def unique_url_to_all(image_url:str=None) -> URLs_Dict:
         raise Invalid_URL_Type(type(image_url))
     return {"Google":f"https://lens.google.com/uploadbyurl?url={image_url}",
             "Yandex":f"https://yandex.com/images/search?rpt=imageview&url={image_url}",
-            "TinEye":"https://tineye.com/search?url={image_url}",
+            "TinEye":f"https://tineye.com/search?url={image_url}",
             "Bing":f"https://www.bing.com/images/searchbyimage?cbir=sbi&imgurl={image_url}"}
 
 if __name__ == "__main__":
