@@ -28,7 +28,7 @@ def main(image_url:typing.Union[str,None,typing.List[str]]=None) -> typing.Union
                 image_url = input(f"{c_blue}Image URL:{c_reset} ").strip()
                 URLs = unique_url_to_all(image_url)
                 for search_engine_name,url in URLs.items():
-                    print(f"{c_blue}{search_engine_name}:{c_reset} {url} \n")
+                    print(f"{c_blue}{search_engine_name}:{c_reset} {url} \r")
                 print("\n")
         except KeyboardInterrupt:
             return
