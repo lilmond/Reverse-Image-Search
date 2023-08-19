@@ -12,7 +12,7 @@ class Invalid_URL_Type(Exception):
         self.variable_type=variable_type
     def __str__(self):
         if self.variable_type is None:
-            return "No URL has been provied (None)"
+            return "No URL has been provided (None)"
         else:
             return f"The variable provided is a {self.variable_type} wich is NOT a string it can't be processed."
 
